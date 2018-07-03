@@ -1,4 +1,4 @@
 # Database-Management-system-Final-project
 
-Co authors
+Co author:
 Yaseer Zhala

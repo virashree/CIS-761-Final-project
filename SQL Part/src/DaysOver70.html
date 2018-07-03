@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="https://www.highcharts.com/highslide/highslide.css" rel="stylesheet" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/modules/heatmap.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+    </head>
+    <body style="margin:0;padding:0">
+                <div id="container" style="width:1220px;">Loading....</div>
+
+
+    <script>
+        $(function(){
+
+
+ 
+
+
+
+
+            Highcharts.setOptions({"lang": {}, "global": {}});
+            var option = {"tooltip": {"pointFormat": "Number of days over 70\u00b0: <b>{point.y:.1f} </b>"}, "subtitle": {"text": "Observed in Kansas City, Kansas, USA : 1934 - 2016"}, "loading": {}, "credits": {"enabled": false}, "labels": {}, "chart": {"width": 1220, "renderTo": "container", "inverted": false}, "drilldown": {}, "plotOptions": {}, "series": {}, "pane": {}, "navigation": {}, "legend": {"enabled": false}, "colors": {}, "title": {"text": "Number of days over 70 per year"}, "xAxis": {"maxPadding": 0.05, "reversed": false, "title": {"text": "Year", "enabled": true}, "showLastLabel": true, "labels": {"style": {"fontSize": "13px", "fontFamily": "Verdana, sans-serif"}, "rotation": -45}, "max": 2017, "min": 1934}, "exporting": {}, "yAxis": {"lineWidth": 2, "title": {"text": "Number of days ( \u00b0F ) "}}};
+
+
+            var data = [{"type": "column", "marker": {"enabled": false}, "data": [[2017, 32], [2016, 208], [2012, 204], [2007, 187], [2002, 167], [1997, 161], [1991, 184], [1986, 185], [1981, 194], [1970, 176], [1965, 186], [1963, 203], [1960, 183], [1955, 190], [1950, 184], [1945, 163], [1940, 182], [1935, 161]], "name": "Series 1"}];
+            option.series = data;
+
+ 
+
+            var chart = new Highcharts.Chart(option);
+
+
+
+
+
+ 
+
+
+        
+    });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="https://www.highcharts.com/highslide/highslide.css" rel="stylesheet" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/modules/heatmap.js"></script>
+        <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script type="text/javascript" src="http://code.highcharts.com/highcharts-3d.js"></script>
+    </head>
+    <body style="margin:0;padding:0">
+                <div id="container" style="width:664px;height:400px;">Loading....</div>
+
+
+    <script>
+        $(function(){
+
+
+ 
+
+
+
+
+            Highcharts.setOptions({"global": {}, "lang": {}});
+            var option = {"tooltip": {}, "series": {}, "colors": {}, "credits": {"enabled": false}, "chart": {"options3d": {"alpha": 45, "enabled": true}, "width": 664, "inverted": false, "height": 400, "type": "pie", "renderTo": "container"}, "exporting": {}, "labels": {}, "xAxis": {}, "subtitle": {"text": "Observed in Kansas City, Kansas, USA"}, "yAxis": {}, "title": {"text": "Top Hashtags"}, "pane": {}, "drilldown": {}, "navigation": {}, "plotOptions": {"pie": {"depth": 45, "innerSize": 100}}, "legend": {}, "loading": {}};
+
+
+            var data = [{"name": "Count", "data": [["EarthDay", 6], ["Weather", 3], ["climatechange", 2], ["Earth", 2], ["EarthDay2017", 1]], "type": "pie"}];
+            option.series = data;
+
+ 
+
+            var chart = new Highcharts.Chart(option);
+
+
+
+
+
+ 
+
+
+        
+    });
+        </script>
+
+    </body>
+</html>
